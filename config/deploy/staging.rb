@@ -1,8 +1,8 @@
-role :app, %w{deploy@<public-ip-of-your-ec2-instance>}
-role :web, %w{deploy@<public-ip-of-your-ec2-instance>}
-role :db,  %w{deploy@<public-ip-of-your-ec2-instance>}
+role :app, %w{deploy@3.94.210.223}
+role :web, %w{deploy@3.94.210.223}
+role :db,  %w{deploy@3.94.210.223}
 set :ssh_options, {
-    keys: %w(~/hhemanth.pem),
+    keys: %w(~/capistrano.pem),
     forward_agent: false,
     auth_methods: %w(publickey password)
 }
