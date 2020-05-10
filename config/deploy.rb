@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-set :application, "hello_world"
+set :application, "cap_app"
 set :repo_url, "git@github.com:hhemanth/cap_app.git"
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 set :rvm_ruby_version, '2.5.6'
