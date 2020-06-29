@@ -1,3 +1,11 @@
+role :app, %w{deploy@3.84.196.221}
+role :web, %w{deploy@3.84.196.221}
+role :db,  %w{deploy@3.84.196.221}
+set :ssh_options, {
+    keys: %w(~/capistrano.pem),
+    forward_agent: false,
+    auth_methods: %w(publickey password)
+}
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
